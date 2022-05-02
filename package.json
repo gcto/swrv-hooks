@@ -1,0 +1,44 @@
+{
+  "name": "@gcto/swrv-hooks",
+  "version": "0.0.1",
+  "description": "Hooks for SWRV caching",
+  "main": "lib/index.js",
+  "types": "lib/index.d.js",
+  "scripts": {
+    "test": "echo \"No test specified\"",
+    "build": "tsc",
+    "format": "echo \"No formatter specified\"",
+    "lint": "echo \"No linter specified\"",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gcto/quasar-shared.git"
+  },
+  "keywords": [],
+  "author": "Alain <alain@gcto.ca>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gcto/quasar-shared/issues"
+  },
+  "homepage": "https://github.com/gcto/quasar-shared#readme",
+  "dependencies": {
+    "@vue/shared": "^3.2.33",
+    "swrv": "^0.9.6",
+    "vue": "^3.2.33"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.31",
+    "prettier": "^2.4.0",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.4.3"
+  },
+  "publishConfig": {
+    "@gcto:registry": "https://npm.pkg.github.com"
+  }
+}
