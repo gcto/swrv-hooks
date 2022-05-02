@@ -12,8 +12,6 @@ import {
   SWRVResult,
 } from "./interfaces";
 
-// Minimal reimplementation of SWR for Vue3
-
 export function markRawSafe<T>(obj: T): T {
   if (!obj || !isPlainObject(obj)) {
     return obj;
