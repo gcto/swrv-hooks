@@ -1,18 +1,12 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["es2015"],
-    "module": "commonjs",
+    "target": "ESNext",
+    "module": "ESNext",
     "declaration": true,
     "outDir": "./lib",
-    // "strict": true,
-    "skipLibCheck": true
+    "strict": true,
+    "moduleResolution": "Node"
   },
-  "include": ["src"],
-  "exclude": [
-    "node_modules",
-    "./node_modules",
-    "./node_modules/*",
-    "**/__tests__/*"
-  ]
+  "include": ["src/index.ts"],
+  "exclude": ["node_modules/**/*", "**/__tests__/*"]
 }
