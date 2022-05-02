@@ -41,9 +41,9 @@ export function useSWRV<D, K extends SWRVKey, E = Error>(
   const conf = { ...(defaultConfig as SWRVConfig<D, E>), ...config };
 
   const result = reactive({
-    key: undefined as ArgsFromKey<K> | undefined,
-    data: undefined as D | undefined,
-    error: undefined as E | undefined,
+    key: undefined as UnwrapRef<ArgsFromKey<K>> | undefined,
+    data: undefined as UnwrapRef<D> | undefined,
+    error: undefined as UnwrapRef<E> | undefined,
     isValidating: true,
     mutate: (data: Promise<D> | D) => mutate(key, data),
   });
@@ -105,8 +105,8 @@ export function useSWRV<D, K extends SWRVKey, E = Error>(
         // cachedResult = cachedItem.data;
       } else {
         cachedResult = reactive({
-          data: undefined as D | undefined,
-          error: undefined as E | undefined,
+          data: undefined as UnwrapRef<D> | undefined,
+          error: undefined as UnwrapRef<E> | undefined,
           isValidating: true,
         });
 

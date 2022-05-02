@@ -1,12 +1,32 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
+    "target": "es5",
+    "lib": ["es2015"],
+    "module": "commonjs",
     "declaration": true,
     "outDir": "./lib",
     "strict": true,
+    "skipLibCheck": true,
     "moduleResolution": "Node"
   },
   "include": ["src/index.ts"],
-  "exclude": ["node_modules/**/*", "**/__tests__/*"]
+  "exclude": [
+    "node_modules",
+    "./node_modules",
+    "./node_modules/*",
+    "**/__tests__/*"
+  ]
 }
+
+// {
+//   "compilerOptions": {
+//         "target": "es5",
+//         "module": "commonjs",
+//     "declaration": true,
+//     "outDir": "./lib",
+//     "strict": true,
+
+//   },
+//   "include": ["src/index.ts"],
+//   "exclude": ["node_modules/**/*", "**/__tests__/*"]
+// }
