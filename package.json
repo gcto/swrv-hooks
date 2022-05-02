@@ -22,10 +22,6 @@
   "keywords": [],
   "author": "Alain <alain@gcto.ca>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/gcto/quasar-shared/issues"
-  },
-  "homepage": "https://github.com/gcto/quasar-shared#readme",
   "dependencies": {
     "@vue/shared": "^3.2.33",
     "swrv": "^0.9.6",
