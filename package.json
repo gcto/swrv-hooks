@@ -1,6 +1,6 @@
 {
   "name": "@gcto/swrv-hooks",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Hooks for SWRV caching",
   "main": "lib/index.js",
   "types": "lib/index.d.js",
