@@ -23,8 +23,6 @@
   "author": "Alain <alain@gcto.ca>",
   "license": "MIT",
   "dependencies": {
-    "@vue/shared": "^3.2.33",
-    "swrv": "^0.9.6",
     "vue": "^3.2.33"
   },
   "devDependencies": {

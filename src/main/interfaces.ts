@@ -1,4 +1,4 @@
-import { SWRVCache } from "swrv";
+import { SWRVCache } from "./cache";
 import { Ref, UnwrapRef } from "vue";
 
 export type AnyTuple =

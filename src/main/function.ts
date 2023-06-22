@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/ban-types */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { isFunction, isPlainObject } from "@vue/shared";
-import { SWRVCache } from "swrv";
+import { SWRVCache } from "./cache";
 import { markRaw, reactive, Ref, toRefs, UnwrapRef, watchEffect } from "vue";
 import {
   ArgsFromKey,
